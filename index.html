@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menú Desplegable</title>
+	
+</head>
+<style>
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height:90vh;
+}
+
+.hero h1 {
+	font-size: 80px;
+	color:  #447275;
+}
+
+.hero p {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #113CFC;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+body{
+background-image: url('https://www.clarin.com/2023/12/27/a3uWxNttk_1256x620__1.jpg2');
+background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+	background-size: cover;
+}
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: #333;
+	font-size: 20px;
+	margin-top: 50px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: red;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+
+}
+
+</style>
+<style>
+        body {
+          background-image: url("https://i.ytimg.com/vi/wkrh-QpPK18/sddefault.jpg");
+font-size:form;
+		  background-size: form;
+        }
+    </style>
+
+
+
+<body>
+ 
+	<nav>
+		<ul class="menu-horizontal">
+			<li><a href="Menu1.html">Inicio</a></li>
+			<li>
+				<a href="#">Productos</a>
+				<ul class="menu-vertical">
+					<li><a href="Productos.html">Celulares</a></li>
+					
+				</ul>
+			</li>
+			<li>
+			 <a href="https://www.redalyc.org/pdf/971/97112696002.pdf" download="C:\Users\ag731\Documents\documento.pdf">Documento</a>
+				<ul class="menu-vertical">
+					
+				</ul>
+			</li>
+			<li><a href="Reseñas.html">Reseña</a></li>
+
+		</ul>
+	</nav>
+<div class="hero" id="hero">
+	 <h1>CREDICEL</h1>
+	  <p> Lo mejor en celulares</p>
+	   </div>
+	    <img src="https://www.clarin.com/2023/12/27/a3uWxNttk_1256x620__1.jpg2">
+</body>
+</html>
