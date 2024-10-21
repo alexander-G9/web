@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menú Desplegable</title>
+	
+</head>
+<style>
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height:90vh;
+}
+
+.hero h1 {
+	font-size: 80px;
+}
+
+.hero p {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #113CFC;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+body{
+background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+	background-size: cover;
+}
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: #333;
+	font-size: 20px;
+	margin-top: 50px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: red;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+
+}
+.seccion {
+	min-height: 100vh;
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+
+	padding-top: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.seccion .card {
+	background: #fff;
+	height: 90%;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.seccion h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.seccion p {
+	line-height: 38px;
+	margin-bottom: 40px;
+	color: #494949;
+	font-size: 20px;
+}
+
+.seccion img {
+	width: 100%;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+
+</style>
+
+
+
+<body>
+ 
+	<nav>
+		<ul class="menu-horizontal">
+				<li><a href="index.html">Inicio</a></li>
+			<li>
+				<a href="#">Productos</a>
+				<ul class="menu-vertical">
+					<li><a href="Celulares.html">Celulares</a></li>
+					
+				</ul>
+			</li>
+			<li>
+				<a href="Pdf.html">Documento</a>
+				<ul class="menu-vertical">
+					
+				</ul>
+			</li>
+			<li><a href="video.html">Reseña</a></li>
+
+		</ul>
+	
+	<div class="secciones">
+	        <div class="seccion" id="2">
+	            <div class=" card">
+	               <h1> Motorola Edge 50 Fusion</h1>
+	               <img src="https://i.blogs.es/5a9c74/captura-de-pantalla-2024-07-19-a-la-s-16.27.10/500_333.png" alt="">
+	               <p>Elige entre los acabados sofisticados de gamuza vegana (Rosa Fragola) o de cuero vegano (Azul Artico), o bien, elige un acabado refinado de cristal acrílico en color Verde Azulado.
+El motorola edge 50 fusion está diseñado para brindarte tranquilidad todos los días. La clasificación IP68 significa que puede soportar polvo, suciedad y arena, además de sumergirse 1.5 metros bajo el agua dulce durante un máximo de 30 minutos. Ya no tienes que preocuparte si te mojas.
+Inspírate con las funciones de la cámara de tu edge sencillas de usar.
+La cámara principal con 50 MP cuenta con un potente sensor LYTIA™ LYT-700C que captura tomas a gran velocidad con menos ruido en ambientes oscuros.
+Un sensor avanzado que ofrece dos perspectivas espectaculares. El lente ultra gran angular de 120° captura lo que ven tus ojos con un área de visión más amplia en comparación con lentes convencionales.
+El lente de Visión Macro te acerca 4 veces más a tu objetivo para que puedas ver los pequeños detalles.
+Con la cámara especial para selfies, puedes tomar increíbles fotos de alta resolución. La tecnología Quad Pixel combina cuatro píxeles en uno para ofrecer una sensibilidad 4 veces mejor en ambientes con poca luz y resultados increíbles.</p>
+			    </div>
+	         </div>
+	   </div>
+	   
+	   <div class="secciones">
+	        <div class="seccion" id="2">
+	            <div class=" card">
+	               <h1> Samsung S24 Ultra</h1>
+	               <img src="https://images.samsung.com/is/image/samsung/assets/mx/smartphones/galaxy-s24-ultra/buy/03_S24Ultra-GalaxyAI-KV_PC_0527_final.jpg" alt="">
+	               <p>l Samsung Galaxy S24 Ultra pasa a ser el smartphone más poderoso de Samsung, por primera vez con chasis de titanio. En cuanto a sus características, cuenta con una pantalla AMOLED de 6.8 pulgadas a resolución QHD+ y tasa de refresco de 120Hz, protegida por Gorilla Glass Armor. La cámara posterior tiene un sensor principal de 200MP, una cámara telefoto periscópica de 50MP con zoom óptico 5x, otra cámara telefoto de 10MP con zoom 3x, y una cámara ultrawide de 12MP con autofoco, siendo la cámara selfie de 12MP, también con foco automático. Por dentro, encontramos un procesador Snapdragon 8 Gen 3 for Galaxy, acompañado de 12GB de RAM con hasta 1TB de almacenamiento, y una batería de 5000 mAh que puede cargar a 45W de potencia por cable y15W en forma inalámbrica, completando sus características con parlantes stereo, lector de huellas bajo pantalla, stylus S Pen, llamadas satelitales de emergencia, resistencia al agua IP68 y Android 14 con siete años de actualizaciones.</p>
+			    </div>
+	         </div>
+	   </div>
+	   <div class="secciones">
+	        <div class="seccion" id="2">
+	            <div class=" card">
+	               <h1>Iphone 16 Pro Max</h1>
+	               <img src="https://tuapplemundo.com/wp-content/uploads/2024/05/produccion-pantallas-iphone-16-720x405.webp" alt="">
+	               <p>El Apple iPhone 16 Pro Max es el iPhone más poderoso de la serie 16 con una pantalla de 6.9 pulgadas con refresco de 120Hz y potenciado por un procesador Apple A18 Pro con hasta 1TB de almacenamiento. Su cámara posterior cuádruple cuenta con un sensor principal de 48MP con OIS, un lente ultrawide de 48MP, un lente telefoto de 12MP con zoom 5x y un sensor ToF, más una cámara selfie de 12MP. Su batería de 4685 mAh es de carga rápida tanto por cable como en forma inalámbrica, cuenta con parlantes stereo, resistencia al polvo y agua, y corre iOS 18.</p>
+			    </div>
+	         </div>
+	   </div>
+	   <div class="secciones">
+	        <div class="seccion" id="2">
+	            <div class=" card">
+	               <h1> Xiaomi 14 Ultra</h1>
+	               <img src="https://tecstore.pe/media/magefan_blog/14ultra.jpg" alt="">
+	               <p>El Xiaomi 14 Ultra se suma a la serie 14 justo antes de su anuncio internacional. El Xiaomi 14 Ultra cuenta con una pantalla AMOLED LTPO de 6.73 pulgadas a resolución QHD+ y tasa de refresco de 120Hz. Por dentro, encontramos un procesador Snapdragon 8 Gen 3 acompañado de hasta 16GB de RAM y hasta 1TB de almacenamiento y una batería de 5000 mAh con soporte para carga rápida por cable e inalámbrica. La cámara principal, desarrollada con Leica, cuenta con cuatro lentes de 50MP siendo el principal de apertura variable con OIS, seguido de una cámara ultrawide y un par de lentes telefoto, uno de ellos periscópico. El Xiaomi 14 Ultra también cuenta con parlantes stereo, lector de huellas bajo la pantalla, es resistente al polvo y agua y corre HyperOS basado en Android 14.</p>
+			    </div>
+	         </div>
+	   </div>
+	   
+</body>
+</html>
